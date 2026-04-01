@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jay of All Trades — Handyman &amp; Home Services | Fort Wayne, IN</title>
+  <meta name="description" content="Reliable handyman services in Fort Wayne, Indiana. Lawn care, gutter cleaning, snow removal, flooring installs, and more. Call Jay today.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwindcss.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['"Libre Baskerville"', 'Georgia', 'serif'],
+            body: ['"DM Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-pattern {
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .service-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body class="font-body text-slate-800 bg-stone-50">
+
+  <!-- Header -->
+  <header class="bg-slate-800 text-white sticky top-0 z-50 shadow-lg">
+    <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="logo.jpg" alt="Jay of All Trades logo" class="w-10 h-10 rounded-full">
+        <span class="font-heading text-lg font-bold tracking-tight">Jay of All Trades</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#services" class="hidden sm:inline text-slate-300 hover:text-white text-sm font-medium transition-colors">Services</a>
+        <a href="tel:4199025094" class="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2 text-sm font-semibold tracking-wide transition-colors rounded">
+          Call Jay
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-slate-800 hero-pattern text-white pb-24 pt-20 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+      <div class="flex-1">
+        <div class="inline-block bg-emerald-900 text-emerald-400 text-sm font-semibold px-3 py-1 rounded-full mb-6 border border-emerald-700">
+          Serving Fort Wayne &amp; Surrounding Areas
+        </div>
+        <h1 class="font-heading text-4xl md:text-5xl font-bold leading-tight mb-6">
+          Your go-to guy for the stuff you don't want&nbsp;to&nbsp;do.
+        </h1>
+        <p class="text-slate-300 text-lg md:text-xl leading-relaxed max-w-xl mb-10">
+          Lawn overgrown? Gutters full? Floor needs replacing? Jay handles the jobs that pile up — reliably, affordably, and without the&nbsp;runaround.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="tel:4199025094" class="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 text-lg font-semibold tracking-wide transition-colors text-center rounded shadow-lg shadow-emerald-600/25">
+            (419) 902-5094
+          </a>
+          <a href="mailto:joatco.info@gmail.com" class="border-2 border-slate-500 hover:border-white hover:bg-slate-700 text-slate-200 px-8 py-4 text-lg font-medium tracking-wide transition-colors text-center rounded">
+            Get a Free Quote
+          </a>
+        </div>
+      </div>
+      <div class="flex-shrink-0">
+        <img src="logo.jpg" alt="Jay of All Trades — Lawn, Delivery, Flooring" class="w-56 h-56 md:w-72 md:h-72 rounded-2xl shadow-2xl border-4 border-slate-600">
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <section class="bg-slate-700 text-white py-5 px-6 border-t border-slate-600">
+    <div class="max-w-6xl mx-auto flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm font-medium">
+      <span class="flex items-center gap-2"><span class="text-emerald-400 text-lg">&#10003;</span> Licensed &amp; Insured</span>
+      <span class="flex items-center gap-2"><span class="text-emerald-400 text-lg">&#10003;</span> Free Estimates</span>
+      <span class="flex items-center gap-2"><span class="text-emerald-400 text-lg">&#10003;</span> Same-Day Quotes</span>
+      <span class="flex items-center gap-2"><span class="text-emerald-400 text-lg">&#10003;</span> No Job Too Small</span>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-14">
+        <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">What Jay Does</h2>
+        <p class="text-slate-500 text-lg max-w-xl mx-auto">If it's on this list — or close to it — just call.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="service-card rounded-lg overflow-hidden relative h-72 group">
+          <img src="img/lawn.png" alt="" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+          <div class="relative h-full flex flex-col justify-end p-7 text-white">
+            <h3 class="font-bold text-xl mb-2">Lawn Care &amp; Yard Work</h3>
+            <p class="text-white/80 leading-relaxed text-sm">Mowing, trimming, edging, leaf cleanup, and seasonal yard maintenance. Regular schedules or one-time jobs.</p>
+          </div>
+        </div>
+
+        <div class="service-card rounded-lg overflow-hidden relative h-72 group">
+          <img src="img/gutter.png" alt="" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+          <div class="relative h-full flex flex-col justify-end p-7 text-white">
+            <h3 class="font-bold text-xl mb-2">Gutter Cleaning</h3>
+            <p class="text-white/80 leading-relaxed text-sm">Full gutter cleanout and downspout flush. Keeps water flowing where it should — away from your foundation.</p>
+          </div>
+        </div>
+
+        <div class="service-card rounded-lg overflow-hidden relative h-72 group">
+          <img src="img/snow.png" alt="" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+          <div class="relative h-full flex flex-col justify-end p-7 text-white">
+            <h3 class="font-bold text-xl mb-2">Snow Removal</h3>
+            <p class="text-white/80 leading-relaxed text-sm">Driveways, sidewalks, and storefronts cleared fast when Fort Wayne winters hit. Reliable and on time.</p>
+          </div>
+        </div>
+
+        <div class="service-card rounded-lg overflow-hidden relative h-72 group">
+          <img src="img/flooring.png" alt="" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+          <div class="relative h-full flex flex-col justify-end p-7 text-white">
+            <h3 class="font-bold text-xl mb-2">Flooring Installs</h3>
+            <p class="text-white/80 leading-relaxed text-sm">Vinyl plank, laminate, and tile installation. Clean work, fair pricing, done right the first time.</p>
+          </div>
+        </div>
+
+        <div class="service-card rounded-lg overflow-hidden relative h-72 group">
+          <img src="img/truck.png" alt="" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+          <div class="relative h-full flex flex-col justify-end p-7 text-white">
+            <h3 class="font-bold text-xl mb-2">Delivery &amp; Hauling</h3>
+            <p class="text-white/80 leading-relaxed text-sm">Need something picked up, dropped off, or hauled away? Furniture, appliances, yard waste — Jay's got the truck.</p>
+          </div>
+        </div>
+
+        <div class="service-card rounded-lg overflow-hidden relative h-72 group">
+          <img src="img/handyman.png" alt="" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+          <div class="relative h-full flex flex-col justify-end p-7 text-white">
+            <h3 class="font-bold text-xl mb-2">General Handyman</h3>
+            <p class="text-white/80 leading-relaxed text-sm">Mounting, repairs, assembly, pressure washing, odd jobs — the stuff that never makes it to the top of your list.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Jay -->
+  <section class="bg-slate-800 hero-pattern text-white py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold mb-14 text-center">Why People Call Jay</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-slate-700 border border-slate-600 rounded-lg p-8">
+          <p class="text-4xl font-heading font-bold text-emerald-400 mb-4">01</p>
+          <h3 class="font-bold text-xl mb-3">He shows up.</h3>
+          <p class="text-slate-300 leading-relaxed">No ghosting, no "I'll get back to you." Jay confirms a time and he's there. Every time.</p>
+        </div>
+        <div class="bg-slate-700 border border-slate-600 rounded-lg p-8">
+          <p class="text-4xl font-heading font-bold text-emerald-400 mb-4">02</p>
+          <h3 class="font-bold text-xl mb-3">Fair, honest pricing.</h3>
+          <p class="text-slate-300 leading-relaxed">You'll know the cost before work starts. No surprise charges, no inflated quotes.</p>
+        </div>
+        <div class="bg-slate-700 border border-slate-600 rounded-lg p-8">
+          <p class="text-4xl font-heading font-bold text-emerald-400 mb-4">03</p>
+          <h3 class="font-bold text-xl mb-3">Gets it done right.</h3>
+          <p class="text-slate-300 leading-relaxed">Quality work, cleaned up when he's done. The kind of guy you tell your neighbors about.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-20 px-6 bg-stone-100">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold mb-14 text-center">What Customers Say</h2>
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <blockquote class="bg-white rounded-lg p-8 shadow-sm border border-stone-200">
+          <div class="text-emerald-500 text-2xl mb-4">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="text-slate-600 leading-relaxed italic font-body mb-5">"Jay cleaned out our gutters and hauled away a pile of yard waste in the same trip. Showed up on time, fair price, no hassle. Already have him coming back for spring cleanup."</p>
+          <footer class="text-slate-400 text-sm font-semibold">— Fort Wayne homeowner</footer>
+        </blockquote>
+        <blockquote class="bg-white rounded-lg p-8 shadow-sm border border-stone-200">
+          <div class="text-emerald-500 text-2xl mb-4">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="text-slate-600 leading-relaxed italic font-body mb-5">"Had him install vinyl plank in two bedrooms. Clean work, finished ahead of schedule, and the price was exactly what he quoted. Hard to find that these days."</p>
+          <footer class="text-slate-400 text-sm font-semibold">— New Haven resident</footer>
+        </blockquote>
+      </div>
+      <p class="text-center text-slate-400 text-sm mt-8">Have a review to share? <a href="mailto:joatco.info@gmail.com" class="text-emerald-600 underline hover:text-emerald-700">Send it to Jay</a></p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="bg-emerald-700 text-white py-20 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold mb-5">Ready to get it off your&nbsp;list?</h2>
+      <p class="text-emerald-100 text-lg mb-10">Call or text Jay for a free estimate. Most jobs quoted same&nbsp;day.</p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+        <a href="tel:4199025094" class="bg-white text-emerald-800 hover:bg-stone-100 px-8 py-4 text-lg font-bold tracking-wide transition-colors rounded shadow-lg">
+          (419) 902-5094
+        </a>
+        <a href="mailto:joatco.info@gmail.com" class="border-2 border-white/50 hover:border-white hover:bg-emerald-800 text-white px-8 py-4 text-lg font-medium tracking-wide transition-colors rounded">
+          joatco.info@gmail.com
+        </a>
+      </div>
+
+      <a href="https://www.facebook.com/people/Jay-Of-All-Trades/61581440533536/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-emerald-200 hover:text-white transition-colors text-sm">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        Follow Jay on Facebook
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 py-8 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
+      <div class="flex items-center gap-3">
+        <img src="logo.jpg" alt="" class="w-7 h-7 rounded-full opacity-60">
+        <span>&copy; 2026 Jay of All Trades</span>
+      </div>
+      <span>Fort Wayne &middot; New Haven &middot; Leo-Cedarville &middot; surrounding areas</span>
+    </div>
+  </footer>
+
+</body>
+</html>
