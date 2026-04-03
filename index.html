@@ -168,7 +168,7 @@
   <!-- ========== HEADER ========== -->
   <header class="sticky top-0 z-50">
     <div class="h-1 bg-gradient-to-r from-forest via-steel to-copper"></div>
-    <div class="bg-navy shadow-lg shadow-navy/50">
+    <div class="bg-navy/95 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.4)]">
       <div class="max-w-7xl mx-auto px-6 lg:px-10 py-2.5 flex items-center justify-between">
         <a href="#" class="flex items-center gap-4 group">
           <img src="https://mikefinneran-personal.s3.us-east-1.amazonaws.com/scoping-logos/1775093340819-JOAT_logo.PNG" alt="JOAT logo" class="w-14 h-14 object-contain group-hover:scale-105 transition-transform">
@@ -179,9 +179,8 @@
         </a>
         <nav class="flex items-center gap-5 lg:gap-6">
           <a href="#services" class="hidden lg:inline text-cream/50 hover:text-steel-light text-sm font-medium transition-colors">Services</a>
-          <a href="#landlords" class="hidden lg:inline text-cream/50 hover:text-steel-light text-sm font-medium transition-colors">Landlords</a>
-          <a href="#contact" class="hidden lg:inline text-cream/50 hover:text-steel-light text-sm font-medium transition-colors">Contact</a>
-          <a href="tel:4199025094" class="bg-copper hover:bg-copper-dark text-cream px-5 py-2.5 text-sm font-bold uppercase tracking-widest transition-all hover:shadow-lg hover:shadow-copper/30 flex items-center gap-2 rounded-sm">
+<a href="#contact" class="hidden lg:inline text-cream/50 hover:text-steel-light text-sm font-medium transition-colors">Contact</a>
+          <a href="tel:4199025094" class="bg-copper hover:bg-copper-dark text-cream px-5 py-2.5 text-sm font-bold uppercase tracking-widest transition-all hover:shadow-lg hover:shadow-copper/30 flex items-center gap-2 rounded-full">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             (419) 902-5094
           </a>
@@ -191,10 +190,11 @@
   </header>
 
   <!-- ========== HERO ========== -->
-  <section class="relative text-cream overflow-hidden">
-    <img src="img/striped-lawn.png" alt="" class="absolute inset-0 w-full h-full object-cover object-center">
-    <div class="absolute inset-0 bg-navy/90"></div>
-    <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-forest via-steel to-copper"></div>
+  <section class="relative text-cream overflow-hidden bg-navy">
+    <!-- Topographic contour pattern -->
+    <div class="absolute inset-0 opacity-[0.06]" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22600%22%3E%3Cpath d=%22M0 300c100-80 200-120 300-80s200 100 300 40%22 stroke=%22%23fff%22 fill=%22none%22 stroke-width=%221.5%22/%3E%3Cpath d=%22M0 340c100-80 200-120 300-80s200 100 300 40%22 stroke=%22%23fff%22 fill=%22none%22 stroke-width=%221.5%22/%3E%3Cpath d=%22M0 380c100-80 200-120 300-80s200 100 300 40%22 stroke=%22%23fff%22 fill=%22none%22 stroke-width=%221.5%22/%3E%3Cpath d=%22M0 200c80-60 180-100 280-60s220 80 320 30%22 stroke=%22%23fff%22 fill=%22none%22 stroke-width=%221%22/%3E%3Cpath d=%22M0 240c80-60 180-100 280-60s220 80 320 30%22 stroke=%22%23fff%22 fill=%22none%22 stroke-width=%221%22/%3E%3Cpath d=%22M0 160c80-60 180-100 280-60s220 80 320 30%22 stroke=%22%23fff%22 fill=%22none%22 stroke-width=%221%22/%3E%3Cpath d=%22M0 460c120-60 200-100 300-60s180 80 300 20%22 stroke=%22%23fff%22 fill=%22none%22 stroke-width=%221%22/%3E%3Cpath d=%22M0 500c120-60 200-100 300-60s180 80 300 20%22 stroke=%22%23fff%22 fill=%22none%22 stroke-width=%221%22/%3E%3Cpath d=%22M0 100c60-40 160-80 260-40s240 60 340 20%22 stroke=%22%23fff%22 fill=%22none%22 stroke-width=%220.8%22/%3E%3Cpath d=%22M0 60c60-40 160-80 260-40s240 60 340 20%22 stroke=%22%23fff%22 fill=%22none%22 stroke-width=%220.8%22/%3E%3C/svg%3E'); background-size: 600px 600px;"></div>
+    <!-- Gradient wash -->
+    <div class="absolute inset-0 bg-gradient-to-br from-navy via-navy/95 to-forest/30"></div>
 
     <div class="relative w-full max-w-7xl mx-auto px-6 lg:px-10 py-12 md:py-16">
       <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-10">
@@ -207,25 +207,16 @@
             Year-round property maintenance for homeowners and landlords who are done chasing contractors.
           </p>
           <div class="flex flex-col sm:flex-row gap-3">
-            <a href="tel:4199025094" class="bg-copper hover:bg-copper-dark text-cream px-7 py-3.5 text-sm font-semibold uppercase tracking-widest transition-all inline-flex items-center gap-2">
+            <a href="tel:4199025094" class="bg-copper hover:bg-copper-dark text-cream px-7 py-3.5 text-sm font-semibold uppercase tracking-widest transition-all inline-flex items-center gap-2 rounded-lg shadow-lg shadow-copper/25 hover:shadow-xl hover:shadow-copper/30">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               (419) 902-5094
             </a>
-            <a href="#contact" class="border-2 border-cream/20 hover:border-copper text-cream/70 hover:text-cream px-7 py-3.5 text-sm font-medium uppercase tracking-widest transition-all">
+            <a href="#contact" class="border-2 border-cream/20 hover:border-copper text-cream/70 hover:text-cream px-7 py-3.5 text-sm font-medium uppercase tracking-widest transition-all rounded-lg backdrop-blur-sm">
               Free Quote
             </a>
           </div>
         </div>
 
-        <div class="hidden lg:flex flex-col items-center flex-shrink-0">
-          <img src="https://mikefinneran-personal.s3.us-east-1.amazonaws.com/scoping-logos/1775093340819-JOAT_logo.PNG" alt="Jay of All Trades" class="w-56 h-56 object-contain drop-shadow-[0_4px_24px_rgba(0,0,0,0.5)] mb-4">
-          <div class="flex gap-1 w-56 h-12 overflow-hidden">
-            <img src="img/striped-lawn.png" alt="" class="flex-1 object-cover brightness-75">
-            <img src="img/premium-snow.png" alt="" class="flex-1 object-cover brightness-75">
-            <img src="img/premium-gutter.png" alt="" class="flex-1 object-cover brightness-75">
-          </div>
-          <p class="text-cream/30 text-[10px] uppercase tracking-widest mt-3">Lawn &middot; Landscaping &middot; Snow &middot; Gutters &middot; Hauling</p>
-        </div>
       </div>
     </div>
 
@@ -234,46 +225,46 @@
   </section>
 
   <!-- ========== BEFORE & AFTER ========== -->
-  <section class="bg-navy py-14 md:py-18 px-6 lg:px-10 overflow-hidden grain">
+  <section class="bg-cream py-8 md:py-12 px-6 lg:px-10 overflow-hidden">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-6 reveal copper-rule-center">
         <p class="font-body text-copper text-xs font-semibold uppercase tracking-[0.25em] mb-4">Real Results</p>
-        <h2 class="font-heading text-4xl md:text-5xl font-bold text-cream">See the difference.</h2>
-        <p class="text-cream/40 text-base mt-4 max-w-lg mx-auto">Real transformations from Jay's recent projects around Fort Wayne. No stock photos — just the work.</p>
+        <h2 class="font-heading text-4xl md:text-5xl font-bold text-navy">See the difference.</h2>
+        <p class="text-body/60 text-base mt-4 max-w-lg mx-auto">Real transformations from Jay's recent projects around Fort Wayne. No stock photos — just the work.</p>
       </div>
 
       <!-- Before/After pairs -->
-      <div class="space-y-8 stagger">
+      <div class="space-y-2 stagger">
 
-        <!-- Pair 1: Shrub bed cleanup → Fresh mulch -->
-        <div class="reveal grid md:grid-cols-2 gap-2 md:gap-0 overflow-hidden">
+        <!-- Pair A: Front bed — stone retaining wall, bare → fresh mulch -->
+        <div class="reveal grid md:grid-cols-2 gap-2 md:gap-0 overflow-hidden rounded-lg">
           <div class="relative h-64 md:h-80">
-            <img src="img/gallery/gallery-1.jpg" alt="Before: overgrown shrub beds" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            <img src="img/gallery/before-a.jpg" alt="Before: bare front bed with stone retaining wall" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
             <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
-            <span class="absolute top-4 left-4 bg-navy/80 text-cream text-xs font-bold uppercase tracking-widest px-3 py-1.5">Before</span>
+            <span class="absolute top-4 left-4 bg-navy/80 backdrop-blur-sm text-cream text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-md">Before</span>
           </div>
           <div class="relative h-64 md:h-80">
-            <img src="img/gallery/gallery-2.jpg" alt="After: fresh mulch, clean beds" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            <img src="img/gallery/after-a.jpg" alt="After: fresh black mulch in stone-walled bed" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
             <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
-            <span class="absolute top-4 left-4 bg-copper text-cream text-xs font-bold uppercase tracking-widest px-3 py-1.5">After</span>
+            <span class="absolute top-4 left-4 bg-copper text-cream text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-md">After</span>
             <div class="absolute bottom-4 left-4 right-4">
-              <p class="text-cream font-heading font-bold text-lg">Full bed cleanup &amp; mulch refresh</p>
-              <p class="text-cream/50 text-sm">Cleared dead growth, edged beds, fresh mulch throughout</p>
+              <p class="text-cream font-heading font-bold text-lg">Front bed refresh</p>
+              <p class="text-cream/50 text-sm">Stone retaining wall, cleared beds, fresh black mulch throughout</p>
             </div>
           </div>
         </div>
 
-        <!-- Pair 2: Bare beds by porch → Stone edging + mulch -->
-        <div class="reveal grid md:grid-cols-2 gap-2 md:gap-0 overflow-hidden">
+        <!-- Pair B: Porch bed — dried out beds → stone edging + mulch -->
+        <div class="reveal grid md:grid-cols-2 gap-2 md:gap-0 overflow-hidden rounded-lg">
           <div class="relative h-64 md:h-80">
-            <img src="img/gallery/gallery-4.jpg" alt="Before: bare landscape beds" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            <img src="img/gallery/before-b.jpg" alt="Before: dried out porch bed" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
             <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
-            <span class="absolute top-4 left-4 bg-navy/80 text-cream text-xs font-bold uppercase tracking-widest px-3 py-1.5">Before</span>
+            <span class="absolute top-4 left-4 bg-navy/80 backdrop-blur-sm text-cream text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-md">Before</span>
           </div>
           <div class="relative h-64 md:h-80">
-            <img src="img/gallery/gallery-5.jpg" alt="After: stone edging with fresh mulch" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            <img src="img/gallery/after-b.jpg" alt="After: stone edging with fresh mulch by porch" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
             <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
-            <span class="absolute top-4 left-4 bg-copper text-cream text-xs font-bold uppercase tracking-widest px-3 py-1.5">After</span>
+            <span class="absolute top-4 left-4 bg-copper text-cream text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-md">After</span>
             <div class="absolute bottom-4 left-4 right-4">
               <p class="text-cream font-heading font-bold text-lg">Porch bed renovation</p>
               <p class="text-cream/50 text-sm">Stone border edging, fresh mulch, clean plant beds</p>
@@ -281,35 +272,63 @@
           </div>
         </div>
 
-      </div>
-
-      <!-- More work -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-8 reveal">
-        <div class="relative h-48 md:h-56">
-          <img src="img/gallery/gallery-3.jpg" alt="Shrub bed maintenance" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
-          <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
-        </div>
-        <div class="relative h-48 md:h-56">
-          <img src="img/gallery/gallery-6.jpg" alt="Completed front landscaping" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
-          <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
-        </div>
-        <div class="relative h-48 md:h-56">
-          <img src="img/gallery/gallery-7.jpg" alt="Snow cleared driveway" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
-          <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
-          <div class="absolute bottom-3 left-3">
-            <p class="text-cream font-heading font-bold text-sm">Winter ready</p>
+        <!-- Pair C: Side beds by window — overgrown shrubs → fresh mulch -->
+        <div class="reveal grid md:grid-cols-2 gap-2 md:gap-0 overflow-hidden rounded-lg">
+          <div class="relative h-64 md:h-80">
+            <img src="img/gallery/before-c.jpg" alt="Before: overgrown shrubs and debris by window" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-navy/80 backdrop-blur-sm text-cream text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-md">Before</span>
+          </div>
+          <div class="relative h-64 md:h-80">
+            <img src="img/gallery/after-c.jpg" alt="After: clean mulch beds around trimmed shrubs" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-copper text-cream text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-md">After</span>
+            <div class="absolute bottom-4 left-4 right-4">
+              <p class="text-cream font-heading font-bold text-lg">Side bed cleanup &amp; mulch</p>
+              <p class="text-cream/50 text-sm">Cleared debris, trimmed shrubs, fresh black mulch around foundation</p>
+            </div>
           </div>
         </div>
-        <div class="relative h-48 md:h-56">
-          <img src="img/gallery/gallery-8.jpg" alt="Jay's truck" class="absolute inset-0 w-full h-full object-cover object-[center_40%]" loading="lazy">
+
+      </div>
+
+      <!-- More finished work -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-1 mt-4 reveal">
+        <div class="relative h-48 md:h-56 rounded-lg overflow-hidden">
+          <img src="img/gallery/before-d.jpg" alt="Property maintenance work" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
-          <div class="absolute bottom-3 left-3">
-            <p class="text-cream font-heading font-bold text-sm">On the way</p>
-          </div>
+        </div>
+        <div class="relative h-48 md:h-56 rounded-lg overflow-hidden">
+          <img src="img/gallery/after-d.jpg" alt="Clean foundation beds" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+        </div>
+        <div class="relative h-48 md:h-56 rounded-lg overflow-hidden">
+          <img src="img/gallery/before-e.jpg" alt="Property maintenance work" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+        </div>
+        <div class="relative h-48 md:h-56 rounded-lg overflow-hidden">
+          <img src="img/gallery/after-e.jpg" alt="Fresh mulch beds" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+        </div>
+        <div class="relative h-48 md:h-56 rounded-lg overflow-hidden">
+          <img src="img/gallery/showcase-1.jpg" alt="Finished: foundation beds along house" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+        </div>
+        <div class="relative h-48 md:h-56 rounded-lg overflow-hidden">
+          <img src="img/gallery/showcase-2.jpg" alt="Finished: mulch bed around arborvitae" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+        </div>
+        <div class="relative h-48 md:h-56 rounded-lg overflow-hidden">
+          <img src="img/gallery/showcase-3.jpg" alt="Finished: back of house mulch beds" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+        </div>
+        <div class="relative h-48 md:h-56 rounded-lg overflow-hidden">
+          <img src="img/gallery/showcase-4.jpg" alt="Trimmed shrubs with clean beds" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
         </div>
       </div>
 
-      <div class="text-center mt-12 reveal">
+      <div class="text-center mt-6 reveal">
         <a href="https://www.facebook.com/people/Jay-Of-All-Trades/61581440533536/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-copper hover:text-copper-light text-sm font-semibold uppercase tracking-widest transition-colors group">
           More on Facebook
           <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -318,61 +337,61 @@
     </div>
   </section>
 
-  <!-- ========== LAWN & LANDSCAPING — Feature Section ========== -->
-  <section class="relative overflow-hidden">
-    <!-- Full-bleed image top band -->
-    <div class="relative h-56 md:h-72">
-      <img src="img/striped-lawn.png" alt="Premium lawn care" class="absolute inset-0 w-full h-full object-cover">
-      <div class="absolute inset-0 bg-gradient-to-b from-navy/40 to-navy/80"></div>
-      <div class="relative h-full flex items-end max-w-7xl mx-auto px-6 lg:px-10 pb-8">
-        <div>
-          <p class="font-body text-copper text-xs font-semibold uppercase tracking-[0.3em] mb-2">Our Specialty</p>
-          <h2 class="font-heading text-3xl md:text-4xl font-bold text-cream leading-tight">Lawn care &amp; landscaping that keeps your property looking&nbsp;right.</h2>
-        </div>
-      </div>
-    </div>
-
-    <!-- Content grid — tight, no wasted space -->
-    <div class="bg-cream px-6 lg:px-10 py-14 md:py-16">
-      <div class="max-w-7xl mx-auto">
-        <p class="text-body/70 text-base leading-relaxed max-w-2xl mb-10">This is what we do best. Not a side service — lawn and landscaping is the core of JOAT. We handle the full cycle so your property looks sharp twelve months a year.</p>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-          <div class="bg-white p-6 border-t-3 border-t-forest hover:shadow-md transition-shadow" style="border-top: 3px solid #3D6B2E;">
-            <h3 class="font-heading font-bold text-navy text-base mb-2">Weekly &amp; Bi-Weekly Mowing</h3>
-            <p class="text-body/60 text-sm leading-relaxed">Mowing, trimming, edging, blowing. Consistent schedule, consistent results.</p>
-          </div>
-          <div class="bg-white p-6 hover:shadow-md transition-shadow" style="border-top: 3px solid #4A7A9B;">
-            <h3 class="font-heading font-bold text-navy text-base mb-2">Mulch, Edging &amp; Bed Work</h3>
-            <p class="text-body/60 text-sm leading-relaxed">Fresh mulch, clean edges, weed-free beds. Full refreshes or ongoing maintenance.</p>
-          </div>
-          <div class="bg-white p-6 hover:shadow-md transition-shadow" style="border-top: 3px solid #B5651D;">
-            <h3 class="font-heading font-bold text-navy text-base mb-2">Full Property Cleanups</h3>
-            <p class="text-body/60 text-sm leading-relaxed">Spring debris, fall leaves, storm damage. We clear it all and haul it away.</p>
-          </div>
-          <div class="bg-white p-6 hover:shadow-md transition-shadow" style="border-top: 3px solid #3D6B2E;">
-            <h3 class="font-heading font-bold text-navy text-base mb-2">Seasonal Contracts</h3>
-            <p class="text-body/60 text-sm leading-relaxed">Lock in a schedule. Same crew, same quality, every visit. Landlords love this.</p>
-          </div>
+  <!-- ========== LAWN & LANDSCAPING — Jay's Core Business ========== -->
+  <section class="relative bg-white py-10 md:py-14 px-6 lg:px-10 overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-10">
+        <!-- Left: Logo -->
+        <div class="relative reveal hidden lg:flex items-center justify-center">
+          <img src="https://mikefinneran-personal.s3.us-east-1.amazonaws.com/scoping-logos/1775093340819-JOAT_logo.PNG" alt="Jay of All Trades" class="w-80 h-80 object-contain drop-shadow-xl">
         </div>
 
-        <!-- Stats + CTA row -->
-        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 pt-6 border-t border-navy/10">
-          <div class="flex gap-8">
-            <div class="flex items-center gap-2">
-              <span class="font-heading text-2xl font-bold text-copper">8K+</span>
-              <span class="text-body/40 text-xs uppercase tracking-wider">TikTok</span>
+        <!-- Right: The pitch -->
+        <div class="reveal">
+          <div class="inline-block bg-forest/10 text-forest text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-4">Our Specialty</div>
+          <h2 class="font-heading text-3xl md:text-4xl font-bold text-navy leading-tight mb-4">Lawn care &amp; landscaping is what we do&nbsp;best.</h2>
+          <p class="text-body/60 text-base leading-relaxed mb-6">Not a side gig. Not something we squeeze in between other jobs. This is the core of JOAT — and it shows in the work.</p>
+
+          <div class="space-y-4 mb-8">
+            <div class="flex items-start gap-3">
+              <span class="w-6 h-6 bg-forest rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5 text-cream" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <div>
+                <p class="text-navy font-semibold text-sm">Weekly &amp; bi-weekly mowing</p>
+                <p class="text-body/50 text-sm">Mow, trim, edge, blow. Same schedule, every time.</p>
+              </div>
             </div>
-            <div class="flex items-center gap-2">
-              <span class="font-heading text-2xl font-bold text-forest">4</span>
-              <span class="text-body/40 text-xs uppercase tracking-wider">Seasons</span>
+            <div class="flex items-start gap-3">
+              <span class="w-6 h-6 bg-forest rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5 text-cream" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <div>
+                <p class="text-navy font-semibold text-sm">Mulch, edging &amp; bed work</p>
+                <p class="text-body/50 text-sm">Full bed refreshes, stone borders, weed-free beds year-round.</p>
+              </div>
             </div>
-            <div class="flex items-center gap-2">
-              <span class="font-heading text-2xl font-bold text-steel">FW</span>
-              <span class="text-body/40 text-xs uppercase tracking-wider">Local</span>
+            <div class="flex items-start gap-3">
+              <span class="w-6 h-6 bg-forest rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5 text-cream" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <div>
+                <p class="text-navy font-semibold text-sm">Full property cleanups</p>
+                <p class="text-body/50 text-sm">Spring debris, fall leaves, storm damage — hauled away same day.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="w-6 h-6 bg-forest rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5 text-cream" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <div>
+                <p class="text-navy font-semibold text-sm">Seasonal contracts for landlords</p>
+                <p class="text-body/50 text-sm">Lock in one crew for every property, every season. One invoice.</p>
+              </div>
             </div>
           </div>
-          <a href="#contact" class="inline-flex items-center gap-3 bg-forest hover:bg-forest/90 text-cream px-7 py-3.5 text-sm font-semibold uppercase tracking-widest transition-all group">
+
+          <a href="#contact" class="inline-flex items-center gap-3 bg-forest hover:bg-forest/90 text-cream px-7 py-3.5 text-sm font-semibold uppercase tracking-widest transition-all group rounded-lg shadow-md shadow-forest/25 hover:-translate-y-0.5">
             Get a Lawn Care Quote
             <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
@@ -382,9 +401,9 @@
   </section>
 
   <!-- ========== TRUST — Editorial layout ========== -->
-  <section class="relative bg-navy text-cream overflow-hidden grain diagonal-top">
-    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-14 md:py-20">
-      <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+  <section class="relative bg-navy text-cream overflow-hidden grain">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-10 md:py-14">
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
         <!-- Left: Big statement -->
         <div class="reveal">
           <div class="copper-rule">
@@ -399,21 +418,21 @@
         </div>
 
         <!-- Right: Trust points with horizontal rules -->
-        <div class="space-y-10 lg:pt-8 stagger">
+        <div class="space-y-6 lg:pt-4 stagger">
           <div class="reveal">
-            <div class="border-t border-steel/20 pt-8">
+            <div class="border-t border-steel/20 pt-5">
               <h3 class="font-heading font-bold text-2xl text-cream mb-3">We show up.</h3>
               <p class="text-cream/50 leading-relaxed">You get a time. We're there. No ghosting, no guessing, no "I'll get back to you." This alone separates us from 80% of the competition.</p>
             </div>
           </div>
           <div class="reveal">
-            <div class="border-t border-steel/20 pt-8">
+            <div class="border-t border-steel/20 pt-5">
               <h3 class="font-heading font-bold text-2xl text-cream mb-3">Straight pricing.</h3>
               <p class="text-cream/50 leading-relaxed">You know the cost before work starts. No surprise charges. No scope creep. No nickel-and-diming on materials.</p>
             </div>
           </div>
           <div class="reveal">
-            <div class="border-t border-steel/20 pt-8">
+            <div class="border-t border-steel/20 pt-5">
               <h3 class="font-heading font-bold text-2xl text-cream mb-3">Year-round coverage.</h3>
               <p class="text-cream/50 leading-relaxed">Spring through winter, lawn care through snow removal. One relationship, every season. Your lawn guy doesn't disappear in December.</p>
             </div>
@@ -423,111 +442,11 @@
     </div>
   </section>
 
-  <!-- ========== LANDLORD SECTION ========== -->
-  <section id="landlords" class="relative bg-cream py-14 md:py-20 px-6 lg:px-10 overflow-hidden">
-    <!-- Background watermark -->
-    <div class="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/3 opacity-[0.03] pointer-events-none select-none hidden xl:block">
-      <span class="font-heading text-[20rem] font-bold leading-none text-navy">PROPERTY</span>
-    </div>
-
-    <div class="relative max-w-7xl mx-auto">
-      <div class="grid lg:grid-cols-12 gap-10 lg:gap-14">
-        <div class="lg:col-span-5 reveal">
-          <div class="copper-rule">
-            <p class="font-body text-copper text-xs font-semibold uppercase tracking-[0.25em] mb-6">For Property Managers</p>
-          </div>
-          <h2 class="font-heading text-4xl md:text-5xl font-bold text-navy leading-tight mb-6">
-            One number for every property.
-          </h2>
-          <p class="text-body/60 text-lg leading-relaxed mb-10">
-            Managing rentals means managing maintenance — and chasing handymen is the worst part. JOAT handles the work so you can manage the&nbsp;business.
-          </p>
-          <div class="space-y-5 mb-10">
-            <div class="flex items-baseline gap-4">
-              <span class="w-8 h-px bg-copper flex-shrink-0 mt-3"></span>
-              <p class="text-navy font-medium">Same-day response on most requests</p>
-            </div>
-            <div class="flex items-baseline gap-4">
-              <span class="w-8 h-px bg-copper flex-shrink-0 mt-3"></span>
-              <p class="text-navy font-medium">Per-job billing — no hourly surprises</p>
-            </div>
-            <div class="flex items-baseline gap-4">
-              <span class="w-8 h-px bg-copper flex-shrink-0 mt-3"></span>
-              <p class="text-navy font-medium">Respectful service your tenants appreciate</p>
-            </div>
-            <div class="flex items-baseline gap-4">
-              <span class="w-8 h-px bg-copper flex-shrink-0 mt-3"></span>
-              <p class="text-navy font-medium">Fort Wayne, New Haven, Leo-Cedarville &amp; area</p>
-            </div>
-          </div>
-          <a href="tel:4199025094" class="inline-flex items-center gap-3 bg-navy hover:bg-navy/90 text-cream pl-6 pr-8 py-4 text-sm font-semibold uppercase tracking-widest transition-all group">
-            <span class="w-8 h-8 bg-copper flex items-center justify-center transition-colors">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            </span>
-            Talk to Jay
-          </a>
-        </div>
-
-        <!-- Right: Testimonial quote card -->
-        <div class="lg:col-span-7 lg:pl-8 reveal">
-          <div class="relative bg-navy p-10 md:p-14 lg:p-16">
-            <span class="quote-mark">&ldquo;</span>
-            <div class="relative">
-              <p class="font-heading text-cream text-2xl md:text-3xl font-bold leading-snug mb-6 pt-8">
-                Dependable. Don't make me chase you.
-              </p>
-              <p class="text-cream/40 text-sm leading-relaxed mb-8 max-w-md">
-                What every landlord on BiggerPockets says they want. What every property manager searches for. What JOAT actually delivers.
-              </p>
-              <div class="border-t border-cream/10 pt-6">
-                <p class="text-copper text-sm font-semibold uppercase tracking-widest">The standard that matters</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== PROCESS — Horizontal flow ========== -->
-  <section class="bg-white py-14 md:py-20 px-6 lg:px-10 relative">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-16 reveal copper-rule-center">
-        <p class="font-body text-copper text-xs font-semibold uppercase tracking-[0.25em] mb-4">How It Works</p>
-        <h2 class="font-heading text-4xl md:text-5xl font-bold text-navy">Three steps. No&nbsp;runaround.</h2>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-0 stagger">
-        <div class="reveal relative p-10 md:p-12 border-b md:border-b-0 md:border-r border-steel/20">
-          <span class="font-heading text-8xl font-bold text-copper/10 absolute top-4 right-6 leading-none select-none">1</span>
-          <div class="relative">
-            <h3 class="font-heading font-bold text-xl text-navy mb-3">Call Jay</h3>
-            <p class="text-body/60 leading-relaxed">Tell us what you need. We pick up — or call back within hours, not&nbsp;days.</p>
-          </div>
-        </div>
-        <div class="reveal relative p-10 md:p-12 border-b md:border-b-0 md:border-r border-steel/20">
-          <span class="font-heading text-8xl font-bold text-copper/10 absolute top-4 right-6 leading-none select-none">2</span>
-          <div class="relative">
-            <h3 class="font-heading font-bold text-xl text-navy mb-3">Get a Quote</h3>
-            <p class="text-body/60 leading-relaxed">Straight price, no surprises. Most quotes same day.</p>
-          </div>
-        </div>
-        <div class="reveal relative p-10 md:p-12">
-          <span class="font-heading text-8xl font-bold text-copper/10 absolute top-4 right-6 leading-none select-none">3</span>
-          <div class="relative">
-            <h3 class="font-heading font-bold text-xl text-navy mb-3">It Gets Done</h3>
-            <p class="text-body/60 leading-relaxed">We show up on time, do the work right, and clean up. That's&nbsp;it.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ========== SERVICES ========== -->
-  <section id="services" class="relative bg-cream pt-16 pb-24 md:pb-32 px-6 lg:px-10">
+  <section id="services" class="relative bg-cream pt-8 pb-10 md:pb-14 px-6 lg:px-10">
     <div class="max-w-7xl mx-auto">
       <!-- Section header: left-aligned, not centered -->
-      <div class="mb-10 max-w-2xl reveal">
+      <div class="mb-6 max-w-2xl reveal">
         <div class="copper-rule">
           <p class="font-body text-copper text-xs font-semibold uppercase tracking-[0.25em] mb-4">What We Do</p>
         </div>
@@ -536,10 +455,10 @@
       </div>
 
       <!-- Masonry-style grid: asymmetric sizing -->
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-4 stagger">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-2 stagger">
         <!-- Row 1: Large + Small -->
-        <div class="service-tile md:col-span-7 relative overflow-hidden h-72 md:h-96 group cursor-default reveal">
-          <img src="img/striped-lawn.png" alt="Lawn care" class="absolute inset-0 w-full h-full object-cover">
+        <div class="service-tile md:col-span-7 relative overflow-hidden h-72 md:h-96 group cursor-default reveal rounded-xl">
+          <img src="img/service-lawn.jpg" alt="Lawn care" class="absolute inset-0 w-full h-full object-cover">
           <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/30 to-transparent opacity-80"></div>
           <div class="relative h-full flex flex-col justify-end p-8 md:p-10 text-cream">
             <p class="text-copper-light text-xs font-semibold uppercase tracking-[0.2em] mb-2">Spring — Fall</p>
@@ -547,8 +466,8 @@
             <p class="text-cream/60 text-sm leading-relaxed max-w-md">Mowing, trimming, edging, seasonal cleanup. Regular schedules or one-time jobs.</p>
           </div>
         </div>
-        <div class="service-tile md:col-span-5 relative overflow-hidden h-72 md:h-96 group cursor-default reveal">
-          <img src="img/premium-landscaping.png" alt="Landscaping" class="absolute inset-0 w-full h-full object-cover">
+        <div class="service-tile md:col-span-5 relative overflow-hidden h-72 md:h-96 group cursor-default reveal rounded-xl">
+          <img src="img/service-landscaping.jpg" alt="Landscaping" class="absolute inset-0 w-full h-full object-cover">
           <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/30 to-transparent opacity-80"></div>
           <div class="relative h-full flex flex-col justify-end p-8 md:p-10 text-cream">
             <p class="text-copper-light text-xs font-semibold uppercase tracking-[0.2em] mb-2">Design &amp; Install</p>
@@ -558,8 +477,8 @@
         </div>
 
         <!-- Row 2: Small + Large -->
-        <div class="service-tile md:col-span-5 relative overflow-hidden h-72 md:h-80 group cursor-default reveal">
-          <img src="img/premium-snow.png" alt="Snow removal" class="absolute inset-0 w-full h-full object-cover">
+        <div class="service-tile md:col-span-5 relative overflow-hidden h-72 md:h-80 group cursor-default reveal rounded-xl">
+          <img src="img/service-snow.jpg" alt="Snow removal" class="absolute inset-0 w-full h-full object-cover">
           <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/30 to-transparent opacity-80"></div>
           <div class="relative h-full flex flex-col justify-end p-8 md:p-10 text-cream">
             <p class="text-copper-light text-xs font-semibold uppercase tracking-[0.2em] mb-2">Winter</p>
@@ -567,8 +486,8 @@
             <p class="text-cream/60 text-sm leading-relaxed">Driveways, sidewalks, storefronts — cleared fast when Indiana winters&nbsp;hit.</p>
           </div>
         </div>
-        <div class="service-tile md:col-span-7 relative overflow-hidden h-72 md:h-80 group cursor-default reveal">
-          <img src="img/premium-gutter.png" alt="Gutter cleaning" class="absolute inset-0 w-full h-full object-cover">
+        <div class="service-tile md:col-span-7 relative overflow-hidden h-72 md:h-80 group cursor-default reveal rounded-xl">
+          <img src="img/service-gutter.jpg" alt="Gutter cleaning" class="absolute inset-0 w-full h-full object-cover">
           <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/30 to-transparent opacity-80"></div>
           <div class="relative h-full flex flex-col justify-end p-8 md:p-10 text-cream">
             <p class="text-copper-light text-xs font-semibold uppercase tracking-[0.2em] mb-2">Spring &amp; Fall</p>
@@ -578,8 +497,8 @@
         </div>
 
         <!-- Row 3: Even split -->
-        <div class="service-tile md:col-span-6 relative overflow-hidden h-64 md:h-72 group cursor-default reveal">
-          <img src="img/premium-flooring.png" alt="Flooring installs" class="absolute inset-0 w-full h-full object-cover">
+        <div class="service-tile md:col-span-6 relative overflow-hidden h-64 md:h-72 group cursor-default reveal rounded-xl">
+          <img src="img/service-cleanup.jpg" alt="Seasonal cleanups" class="absolute inset-0 w-full h-full object-cover">
           <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/30 to-transparent opacity-80"></div>
           <div class="relative h-full flex flex-col justify-end p-8 md:p-10 text-cream">
             <p class="text-copper-light text-xs font-semibold uppercase tracking-[0.2em] mb-2">Year-Round</p>
@@ -587,8 +506,8 @@
             <p class="text-cream/60 text-sm leading-relaxed">Spring debris, fall leaf removal, bed prep, and full property&nbsp;refreshes.</p>
           </div>
         </div>
-        <div class="service-tile md:col-span-6 relative overflow-hidden h-64 md:h-72 group cursor-default reveal">
-          <img src="img/premium-truck.png" alt="Delivery and hauling" class="absolute inset-0 w-full h-full object-cover">
+        <div class="service-tile md:col-span-6 relative overflow-hidden h-64 md:h-72 group cursor-default reveal rounded-xl">
+          <img src="img/service-hauling.jpg" alt="Delivery and hauling" class="absolute inset-0 w-full h-full object-cover">
           <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/30 to-transparent opacity-80"></div>
           <div class="relative h-full flex flex-col justify-end p-8 md:p-10 text-cream">
             <p class="text-copper-light text-xs font-semibold uppercase tracking-[0.2em] mb-2">Anytime</p>
@@ -601,22 +520,22 @@
   </section>
 
   <!-- ========== TESTIMONIALS ========== -->
-  <section class="bg-cream py-14 md:py-20 px-6 lg:px-10">
+  <section class="bg-white py-8 md:py-12 px-6 lg:px-10">
     <div class="max-w-7xl mx-auto">
-      <div class="mb-16 reveal copper-rule-center text-center">
+      <div class="mb-8 reveal copper-rule-center text-center">
         <p class="font-body text-copper text-xs font-semibold uppercase tracking-[0.25em] mb-4">Testimonials</p>
         <h2 class="font-heading text-4xl md:text-5xl font-bold text-navy">Fort Wayne trusts&nbsp;Jay.</h2>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto stagger">
-        <blockquote class="reveal relative bg-white p-8 md:p-10 border-l-4 border-steel">
+      <div class="grid md:grid-cols-2 gap-3 max-w-5xl mx-auto stagger">
+        <blockquote class="reveal relative bg-white p-8 md:p-10 border-l-4 border-steel rounded-xl shadow-sm">
           <div class="flex gap-0.5 mb-5">
             <span class="text-copper">&#9733;</span><span class="text-copper">&#9733;</span><span class="text-copper">&#9733;</span><span class="text-copper">&#9733;</span><span class="text-copper">&#9733;</span>
           </div>
           <p class="text-navy text-lg leading-relaxed mb-6 font-heading italic">"Jay cleaned out our gutters and hauled away a pile of yard waste in the same trip. Showed up on time, fair price, no hassle."</p>
           <footer class="text-body/40 text-sm font-semibold uppercase tracking-wider">Fort Wayne homeowner</footer>
         </blockquote>
-        <blockquote class="reveal relative bg-white p-8 md:p-10 border-l-4 border-steel">
+        <blockquote class="reveal relative bg-white p-8 md:p-10 border-l-4 border-steel rounded-xl shadow-sm">
           <div class="flex gap-0.5 mb-5">
             <span class="text-copper">&#9733;</span><span class="text-copper">&#9733;</span><span class="text-copper">&#9733;</span><span class="text-copper">&#9733;</span><span class="text-copper">&#9733;</span>
           </div>
@@ -625,27 +544,27 @@
         </blockquote>
       </div>
 
-      <div class="text-center mt-12 reveal">
+      <div class="text-center mt-6 reveal">
         <p class="text-body/40 text-sm">Follow Jay's work — <a href="https://www.tiktok.com/@jay.of.all.trades3" target="_blank" rel="noopener noreferrer" class="text-copper font-semibold hover:text-copper-dark transition-colors">8,000+ on TikTok</a></p>
       </div>
     </div>
   </section>
 
   <!-- ========== CONTACT FORM ========== -->
-  <section id="contact" class="bg-navy text-cream py-14 md:py-20 px-6 lg:px-10 relative overflow-hidden grain">
+  <section id="contact" class="bg-navy text-cream py-10 md:py-14 px-6 lg:px-10 relative overflow-hidden grain">
     <div class="max-w-7xl mx-auto">
-      <div class="grid lg:grid-cols-12 gap-12 lg:gap-20">
+      <div class="grid lg:grid-cols-12 gap-8 lg:gap-14">
         <!-- Left: CTA copy -->
         <div class="lg:col-span-5 reveal">
           <div class="copper-rule">
             <p class="font-body text-copper text-xs font-semibold uppercase tracking-[0.25em] mb-6">Get a Free Quote</p>
           </div>
           <h2 class="font-heading text-4xl md:text-5xl font-bold leading-tight mb-6">Stop chasing.<br>Start calling.</h2>
-          <p class="text-cream/50 text-lg leading-relaxed mb-10">Free estimates. Same-day quotes. Most jobs start within the week. Call, text, or fill out the form.</p>
+          <p class="text-cream/50 text-lg leading-relaxed mb-6">Free estimates. Same-day quotes. Most jobs start within the week. Call, text, or fill out the form.</p>
 
-          <div class="space-y-6 mb-10">
+          <div class="space-y-4 mb-6">
             <a href="tel:4199025094" class="flex items-center gap-4 group">
-              <span class="w-12 h-12 bg-copper flex items-center justify-center flex-shrink-0 group-hover:bg-copper-dark transition-colors">
+              <span class="w-12 h-12 bg-copper flex items-center justify-center flex-shrink-0 group-hover:bg-copper-dark transition-colors rounded-xl">
                 <svg class="w-5 h-5 text-cream" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               </span>
               <div>
@@ -654,7 +573,7 @@
               </div>
             </a>
             <a href="mailto:joatco.info@gmail.com" class="flex items-center gap-4 group">
-              <span class="w-12 h-12 border border-cream/15 flex items-center justify-center flex-shrink-0 group-hover:border-copper transition-colors">
+              <span class="w-12 h-12 border border-cream/15 flex items-center justify-center flex-shrink-0 group-hover:border-copper transition-colors rounded-xl">
                 <svg class="w-5 h-5 text-cream/60" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               </span>
               <div>
@@ -677,7 +596,7 @@
 
         <!-- Right: Contact Form -->
         <div class="lg:col-span-7 reveal">
-          <form action="https://formsubmit.co/joatco.info@gmail.com" method="POST" id="contact-form" class="bg-cream/[0.04] border border-cream/10 p-8 md:p-12">
+          <form action="https://formsubmit.co/joatco.info@gmail.com" method="POST" id="contact-form" class="bg-cream/[0.04] border border-cream/10 p-8 md:p-12 rounded-2xl backdrop-blur-sm">
             <!-- FormSubmit config -->
             <input type="hidden" name="_subject" value="New JOAT Website Inquiry">
             <input type="hidden" name="_captcha" value="false">
@@ -729,7 +648,7 @@
             </div>
 
             <button type="submit"
-              class="w-full sm:w-auto bg-copper hover:bg-copper-dark text-cream px-10 py-4 text-base font-semibold uppercase tracking-widest transition-all inline-flex items-center justify-center gap-3 group">
+              class="w-full sm:w-auto bg-copper hover:bg-copper-dark text-cream px-10 py-4 text-base font-semibold uppercase tracking-widest transition-all inline-flex items-center justify-center gap-3 group rounded-lg shadow-lg shadow-copper/25">
               <span>Send Request</span>
               <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </button>
@@ -742,14 +661,11 @@
   </section>
 
   <!-- ========== CTA BAND ========== -->
-  <section class="relative bg-copper overflow-hidden grain">
-    <div class="absolute inset-0 opacity-10">
-      <div class="absolute inset-0" style="background: repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(0,0,0,0.05) 40px, rgba(0,0,0,0.05) 80px)"></div>
-    </div>
-
-    <div class="relative max-w-4xl mx-auto text-center py-16 md:py-20 px-6">
-      <p class="font-heading text-2xl md:text-3xl font-bold text-cream mb-4 reveal">Prefer to just call? Most people&nbsp;do.</p>
-      <a href="tel:4199025094" class="bg-navy hover:bg-navy/90 text-cream px-10 py-5 text-lg font-bold uppercase tracking-widest transition-all inline-flex items-center justify-center gap-3 reveal">
+  <section class="relative bg-cream py-10 md:py-12 px-6 lg:px-10">
+    <div class="max-w-3xl mx-auto text-center reveal">
+      <p class="font-body text-copper text-xs font-semibold uppercase tracking-[0.25em] mb-4">Ready?</p>
+      <p class="font-heading text-3xl md:text-4xl font-bold text-navy mb-6">Prefer to just call?<br>Most people&nbsp;do.</p>
+      <a href="tel:4199025094" class="bg-copper hover:bg-copper-dark text-cream px-10 py-4 text-lg font-bold uppercase tracking-widest transition-all inline-flex items-center justify-center gap-3 rounded-full shadow-lg shadow-copper/30 hover:shadow-xl hover:shadow-copper/40 hover:-translate-y-0.5">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         (419) 902-5094
       </a>
@@ -757,13 +673,58 @@
   </section>
 
   <!-- ========== FOOTER ========== -->
-  <footer class="bg-navy text-cream/40 py-10 px-6 lg:px-10 border-t-2 border-steel/30">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
-      <div class="flex items-center gap-3">
-        <img src="https://mikefinneran-personal.s3.us-east-1.amazonaws.com/scoping-logos/1775093340819-JOAT_logo.PNG" alt="" class="w-7 h-7 object-contain">
-        <span>&copy; 2026 Jay of All Trades</span>
+  <footer class="bg-navy text-cream/50 pt-14 pb-8 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <!-- Brand -->
+        <div class="sm:col-span-2 lg:col-span-1">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://mikefinneran-personal.s3.us-east-1.amazonaws.com/scoping-logos/1775093340819-JOAT_logo.PNG" alt="JOAT" class="w-10 h-10 object-contain">
+            <span class="font-heading text-cream font-bold text-lg uppercase tracking-wider">JOAT</span>
+          </div>
+          <p class="text-cream/30 text-sm leading-relaxed">Year-round property maintenance for Fort Wayne homeowners and landlords.</p>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4 class="font-heading text-cream font-bold text-sm uppercase tracking-wider mb-4">Services</h4>
+          <ul class="space-y-2 text-sm text-cream/40">
+            <li>Lawn Care & Mowing</li>
+            <li>Landscaping & Mulch</li>
+            <li>Snow Removal</li>
+            <li>Gutter Cleaning</li>
+            <li>Delivery & Hauling</li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="font-heading text-cream font-bold text-sm uppercase tracking-wider mb-4">Contact</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="tel:4199025094" class="text-cream/40 hover:text-copper transition-colors">(419) 902-5094</a></li>
+            <li><a href="mailto:joatco.info@gmail.com" class="text-cream/40 hover:text-copper transition-colors">joatco.info@gmail.com</a></li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div>
+          <h4 class="font-heading text-cream font-bold text-sm uppercase tracking-wider mb-4">Follow Jay</h4>
+          <div class="flex gap-4">
+            <a href="https://www.facebook.com/people/Jay-Of-All-Trades/61581440533536/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-cream/5 hover:bg-copper/20 rounded-lg flex items-center justify-center transition-colors" aria-label="Facebook">
+              <svg class="w-4 h-4 text-cream/50" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@jay.of.all.trades3" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-cream/5 hover:bg-copper/20 rounded-lg flex items-center justify-center transition-colors" aria-label="TikTok">
+              <svg class="w-4 h-4 text-cream/50" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
-      <span class="text-cream/25">Fort Wayne &middot; New Haven &middot; Leo-Cedarville &middot; surrounding areas</span>
+
+      <!-- Bottom bar -->
+      <div class="border-t border-cream/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-cream/25">
+        <span>&copy; 2026 Jay of All Trades. Locally owned in Fort Wayne, IN.</span>
+        <span>Fort Wayne &middot; New Haven &middot; Leo-Cedarville &middot; surrounding areas</span>
+      </div>
     </div>
   </footer>
 
